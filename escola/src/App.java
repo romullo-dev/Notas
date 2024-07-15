@@ -25,6 +25,9 @@ public class App extends JFrame {
 
     static JButton Calcular = new JButton("Calcular");
 
+    static JLabel DesignJLabel = new JLabel("---------------------------------------------------------------------------------------------------------------------------------------------------------------");
+
+    static JLabel labelDescriptionName = new JLabel();
 
     public static void main (String [] args){
 
@@ -58,7 +61,10 @@ public class App extends JFrame {
         Windows.add(NoteLabelTree);
         Windows.add(Note_3);
 
+        Windows.add(DesignJLabel);
+
         Windows.add(Calcular);
+
 
         Windows.setVisible(true);
 
@@ -74,6 +80,8 @@ public class App extends JFrame {
         float N1 = Float.parseFloat(Note_1.getText());
         float N2 = Float.parseFloat(Note_2.getText());
         float N3 = Float.parseFloat(Note_3.getText());
+
+        JOptionPane.showMessageDialog(null, "aaaaaaa","aaaaaaa",JOptionPane.INFORMATION_MESSAGE);
 
     }
 }
